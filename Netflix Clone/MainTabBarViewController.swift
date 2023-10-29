@@ -21,8 +21,25 @@ class MainTabBarViewController: UITabBarController {
         // Now we need to add an image so that we can easily see the vcs in the UI for the user to click on
         
         
+      
+        
+        
+        vc1.tabBarItem.image = UIImage(systemName: "house")
+        vc2.tabBarItem.image = UIImage(systemName: "play.circle")
+        vc3.tabBarItem.image = UIImage(systemName: "magnifyingglass")
+        vc4.tabBarItem.image = UIImage(systemName: "arrow.down.to.line")
+        
+        
+        vc1.title = "Home"
+        vc2.title = "Coming Soon"
+        vc3.title = "Top Search"
+        vc4.title = "Downloads"
+        
+        tabBar.tintColor = .label
+        
         // Change the image
         setViewControllers([vc1, vc2, vc3, vc4], animated: true)
+        
     }
 
 
