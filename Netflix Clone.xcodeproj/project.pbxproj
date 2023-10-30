@@ -18,6 +18,7 @@
 		2A5A21E92AECC067006F57CD /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21E82AECC067006F57CD /* DownloadsViewController.swift */; };
 		2AA02F7F2AEF7D3A00A4C725 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA02F7E2AEF7D3A00A4C725 /* CollectionViewTableViewCell.swift */; };
 		2AA02F812AEF81B100A4C725 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA02F802AEF81B100A4C725 /* HeroHeaderUIView.swift */; };
+		2AA02F832AEFCC3400A4C725 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA02F822AEFCC3400A4C725 /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		2A5A21E82AECC067006F57CD /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		2AA02F7E2AEF7D3A00A4C725 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		2AA02F802AEF81B100A4C725 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
+		2AA02F822AEFCC3400A4C725 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		2AA02F7D2AEF7D0300A4C725 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				2AA02F822AEFCC3400A4C725 /* APICaller.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				2A5A21E72AECC044006F57CD /* SearchViewController.swift in Sources */,
 				2A5A21D22AECBB95006F57CD /* MainTabBarViewController.swift in Sources */,
 				2AA02F7F2AEF7D3A00A4C725 /* CollectionViewTableViewCell.swift in Sources */,
+				2AA02F832AEFCC3400A4C725 /* APICaller.swift in Sources */,
 				2AA02F812AEF81B100A4C725 /* HeroHeaderUIView.swift in Sources */,
 				2A5A21E92AECC067006F57CD /* DownloadsViewController.swift in Sources */,
 				2A5A21CE2AECBB95006F57CD /* AppDelegate.swift in Sources */,

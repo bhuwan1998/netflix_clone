@@ -9,12 +9,23 @@ import UIKit
 
 class HeroHeaderUIView: UIView {
     
+    private let downloadButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Download", for: .normal)
+        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.borderWidth = 1
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 5
+        return button
+    }()
+    
     private let playButton: UIButton = {
         let button = UIButton()
         button.setTitle("Play", for: .normal)
-        button.layer.borderColor = UIColor.systemBackground.cgColor
+        button.layer.borderColor = UIColor.white.cgColor
         button.layer.borderWidth = 1
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 5
         return button
     }()
     
@@ -42,17 +53,29 @@ class HeroHeaderUIView: UIView {
         addSubview(heroImageView)
         addGradient()
         addSubview(playButton)
+        addSubview(downloadButton)
         applyConstraints()
     }
     
     private func applyConstraints(){
         let playButtonContraints = [
             // leadingAnchor is always on the left - Depending on the language - reading from left->right or vice versa
-            playButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
-            playButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20)
+            // leading anchor from left side
+            playButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 70),
+            playButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
+            playButton.widthAnchor.constraint(equalToConstant: 120)
+        ]
+        
+        let downloadButtonConstrainst = [
+            // trailing from right side
+            downloadButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -70),
+            downloadButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
+            downloadButton.widthAnchor.constraint(equalToConstant: 120)
+            
         ]
         
         NSLayoutConstraint.activate(playButtonContraints)
+        NSLayoutConstraint.activate(downloadButtonConstrainst)
     }
     
     override func layoutSubviews() {
