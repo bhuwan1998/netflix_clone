@@ -19,11 +19,6 @@ class MainTabBarViewController: UITabBarController {
         let vc4 = UINavigationController(rootViewController: DownloadsViewController())
         
         // Now we need to add an image so that we can easily see the vcs in the UI for the user to click on
-        
-        
-      
-        
-        
         vc1.tabBarItem.image = UIImage(systemName: "house")
         vc2.tabBarItem.image = UIImage(systemName: "play.circle")
         vc3.tabBarItem.image = UIImage(systemName: "magnifyingglass")
@@ -41,7 +36,6 @@ class MainTabBarViewController: UITabBarController {
         setViewControllers([vc1, vc2, vc3, vc4], animated: true)
         
     }
-
 
 }
 
